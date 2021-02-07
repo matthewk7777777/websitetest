@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<link crossorigin="anonymous" rel="stylesheet" id="sb-font-awesome-css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css?ver=5.5.3" type="text/css" media="all">
+<style>
+* {
+  box-sizing: border-box;
+
+}
+
+ul {
+    padding-inline-start: 0px;
+}
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both; 
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.map-container {
+    text-align: center;
+}
+.map-container .google-maps {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+
+    
+    }
+.map-container .google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+        
+    }
+
+</style>
+</head>
+<body>
+    <div class="nav-container">
+        <div class="left-nav">
+            <a href="home.html">
+                <img src="0001.jpg" alt="home.html" width="118.47" height="24.96">
+                </a>
+            
+        </div>  
+        <div class="right-nav">
+            <div class="how-it-works">
+                <a href="guides.html">HOW IT WORKS</a>
+            </div>
+            <div class="terms">
+                <a href="terms.html">TERMS</a>
+            </div>
+                
+        </div>
+        <hr>
+    </div>
+<h2>Responsive Two Column Layout</h2>
+<p>Resize the browser window to see the responsive effect (the columns will stack on top of each other instead of floating next to each other, when the screen is less than 600px wide).</p>
+
+<div class="instruction-banner">
+    <img src="VOOMME-page-banner-page-001.jpg" alt="image not found">
+</div>  
+<div class="map-container">
+    <div class="map-heading">
+        <h1>VOOMME FINDER</h1>
+    </div>
+    <div class="google.maps">
+        <iframe src="https://www.google.com/maps/d/embed?mid=1DqR-6MPJmTzuyhFUsq2Mcg9AWgiJhIXr" width="90%" height="600" frameborder="0" style="border:0"></iframe>
+
+    </div> 
+</div>
+<div class="booqable-product-list"></div>
+
+<div class="row">
+  <div class="column" style="background-color:#303036;">
+        <h2>VOOMME</h2>
+        <p>EQUIPMENT SHARING</p>
+            Contact Us
+            <br>
+            <a href="tel:+6025555555 ">602-555-5555</a>
+            <br>
+            <a href="mailto:contact@voomme.com">contact@voomme.com</a>
+
+
+        <div class="socials">
+            <a href="#" class="fab fa-facebook"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-youtube"></a>
+        </div>
+
+
+  </div>
+  <div class="column" style="background-color:#303036;">
+    <h2>LINKS</h2>
+    <div class="links">
+        <ul style="list-style: none;">
+        <a href="#"><li>How to use VOOMME</li></a>
+        <a href="#"><li>Trailer Instructions</li></a>
+        <a href="#"><li>Terms and Conditions</li></a>
+        </ul>
+    </div>
+  </div>
+  <div class="column" style="background-color: #303036;">
+    <h2>ACCOUNT</h2>
+    <div class="account-items">
+        <ul style="list-style: none;">
+        <a href="#"><li>Sign In</li></a>
+        <a href="#"><li>Create Account</li></a>
+        </ul>
+    </div>
+  </div>
+  <div class="column" style="background-color:#303036;">
+    <h2>NEED HELP?</h2>
+    <form action="home.html" method="post">
+        <input type="email" name="email" class="text-input contact-input" placeholder="Your email address...">
+        <br>
+        <textarea name="Message" class="text-inpu contact-input" placeholder="Your message"></textarea>
+        <br>
+        <button type="submit" class="btn btn-big">
+            <i class="fa fa-envelope"></i>
+            send
+        </button>
+    </form>
+  </div> 
+
+</div>
+
+</body>
+<div class="cart">
+    <script>
+   var booqableOptions = { company: '818b7c53-1bde-4594-b653-067b6729d4a8' };
+ </script>
+ <script src="https://818b7c53-1bde-4594-b653-067b6729d4a8.assets.booqable.com/v2/booqable.js"></script> 
+
+
+</div>
+
+</html>
