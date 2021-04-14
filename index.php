@@ -1,4 +1,4 @@
-<?php include_once './includes/quip.dbh.inc.php' ?>
+<?php include_once 'quip.dbh.inc.php' ?>
 
 <!DOCTYPE html>
 <html>
